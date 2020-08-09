@@ -160,7 +160,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 10px;
   grid-template-areas: 'bioimage bio bio';
   grid-template-columns: repeat(3, 1fr); }
 
@@ -173,6 +173,36 @@ main {
 .bio {
   grid-area: bio;
   font-size: 1.5rem; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.7rem; }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.8;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #afa9a9;
+  color: #222; }
 
 #main-footer {
   text-align: center;
@@ -212,4 +242,6 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }
