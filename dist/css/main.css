@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #211f1f;
+    background: #1a1919;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #2e2b2b;
+    background: #272626;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -59,14 +59,14 @@
       background-size: cover;
       background-position: center;
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #ffd724; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #ffd724; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -78,7 +78,7 @@
     text-emphasis: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #ffd724; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.2s; }
@@ -96,7 +96,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #2e2b2b;
+  background: #272626;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -114,7 +114,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(46, 43, 43, 0.7); }
+      background: rgba(39, 38, 38, 0.6); }
 
 h1,
 h2,
@@ -141,7 +141,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #ffd724; }
 
 main {
   padding: 4rem;
@@ -151,7 +151,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #ffd724;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -159,6 +159,7 @@ main {
       margin-top: 20vh; }
 
 .about-info {
+  margin-top: 5rem;
   display: grid;
   grid-gap: 10px;
   grid-template-areas: 'bioimage bio bio';
@@ -168,7 +169,7 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid; }
+  border: #ffd724 3px solid; }
 
 .bio {
   grid-area: bio;
@@ -183,8 +184,20 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.8;
-      border-color: #eece1a;
+      border-color: #ffd724;
       transition: all 0.5s ease-out; }
+  .projects .ul-wrap {
+    padding: 0.5rem;
+    background: black;
+    color: white;
+    font-weight: 500; }
+    .projects .ul-wrap h3 {
+      margin-left: 1rem;
+      font-size: 1.4rem; }
+    .projects .ul-wrap ul {
+      text-align: left;
+      list-style: none;
+      font-size: 1.2rem; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -193,21 +206,21 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #ffd724;
     color: #000; }
 
 .btn-dark {
-  background: black;
+  background: #1a1919;
   color: #fff; }
 
 .btn-light {
-  background: #afa9a9;
+  background: #a7a5a5;
   color: #222; }
 
 #main-footer {
   text-align: center;
   padding: 0.5rem;
-  background: #292626;
+  background: #222121;
   color: #fff;
   height: 40px; }
 

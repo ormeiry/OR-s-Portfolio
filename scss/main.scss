@@ -71,6 +71,7 @@ main {
 }
 
 .about-info {
+  margin-top: 5rem;
   display: grid;
   grid-gap: 10px;
   grid-template-areas: 'bioimage bio bio';
@@ -104,6 +105,24 @@ main {
       @include easeOut;
     }
   }
+
+  .ul-wrap {
+    padding: 0.5rem;
+    background: darken($primary-color, 60);
+    color: white;
+    font-weight: 500;
+
+    h3 {
+      margin-left: 1rem;
+      font-size: 1.4rem;
+    }
+
+    ul {
+      text-align: left;
+      list-style: none;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .btn {
@@ -120,7 +139,7 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: darken($primary-color, 5);
   color: #fff;
 }
 
